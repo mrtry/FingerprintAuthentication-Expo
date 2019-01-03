@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es2015",
+    "lib": ["es2015", "es2016"],
+    "jsx": "react-native",
+
+    "pretty": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "strictNullChecks": true
+  }
+}
