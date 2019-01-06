@@ -6,7 +6,7 @@ import { LocalAuthentication } from 'expo'
 
 enum AuthorizedState {
   AUTHORIZED = 'authorized',
-  FAIL = 'fail',
+  FAILED = 'failed',
   NONE = 'none',
 }
 
@@ -65,7 +65,7 @@ export default class App extends React.Component<any, State> {
       const result = await LocalAuthentication.authenticateAsync()
       const status = result.success
         ? AuthorizedState.AUTHORIZED
-        : AuthorizedState.FAIL
+        : AuthorizedState.FAILED
       this.setState({ authorizedState: status }, () => this.finishAuthorize())
     })
   }
